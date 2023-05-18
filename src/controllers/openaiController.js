@@ -9,7 +9,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 async function generateOpenAIResponse(req, res) {
-  const userMessage = req.body.message; // Access the message from the request body
+  const userMessage = req.body.message; 
   if (!userMessage) {
     res.status(400).send("Message cannot be empty");
     return;
